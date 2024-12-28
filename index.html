@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template 4</title>
+
+    <!-- CSS 속성입니다. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form>
+      <input type="text" id="inputId" value="Hello" />
+      <input type="button" onclick="readText()" value="값 읽어오기" />
+    </form>
+
+    <script>
+      function readText() {
+        const current_value = document.getElementById("inputId").value;
+        console.log(current_value);
+      }
+    </script>
+
+    <!-- Box 1 -->
+    <div class="큰박스" id="Box1">
+      <div class="작은박스 노란색">1</div>
+      <div class="작은박스 초록색">2</div>
+      <div class="작은박스 빨간색">3</div>
+      <div class="작은박스">4</div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="큰박스" id="Box2">
+      <div class="작은박스">1</div>
+      <div class="작은박스 초록색">2</div>
+      <div class="작은박스 빨간색">3</div>
+      <div class="작은박스">4</div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="큰박스 초록색" id="Box3">
+      <div class="작은박스 파란색">1</div>
+      <div class="작은박스 빨간색">2</div>
+      <div class="작은박스">3</div>
+    </div>
+  </body>
+</html>
